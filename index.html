@@ -2,15 +2,16 @@
   <img src="20230223_200830.jpg" width="500" height="500" id="69">
 </body>
 <script>
+  let element = document.getElementById("69")
   let w = window.innerWidth;
   let h = window.innerHeight;
   if (w<h) {
-    element.width = w;
-    element.height = w;
+    element.setAttribute("width", w);
+    element.setAttribute("height", w);
   }
   else {
-    element.width = h;
-    element.height = h;
+    element.setAttribute("width", h);
+    element.setAttribute("height", h);
   }
   let element = document.getElementById("69");
 </script>
