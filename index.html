@@ -3,7 +3,14 @@
 </body>
 <script>
   let w = window.innerWidth;
+  let h = window.innerHeight;
+  if (w<h) {
+    element.width = w;
+    element.height = w;
+  }
+  else {
+    element.width = h;
+    element.height = h;
+  }
   let element = document.getElementById("69");
-  element.width = w;
-  element.height = w;
 </script>
